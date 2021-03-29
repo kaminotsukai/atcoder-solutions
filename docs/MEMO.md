@@ -27,3 +27,7 @@ switch ($s) {
 // 連想配列で書いた場合
 $array= ["Sunny" => "Cloudy", "Cloudy" => "Rainy", "Rainy"=>"Sunny"];
 ```
+
+**exit と return の違い**
+
+http://blog.pionet.co.jp/experience/archives/487
