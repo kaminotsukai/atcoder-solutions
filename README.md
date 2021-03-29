@@ -10,3 +10,9 @@ $ oj t -c "php [FILE_NAME]"
 # submit
 $ oj s [FILE_NAME]
 ```
+
+## テンプレートコピー
+
+```sh
+sh sh/template.sh [FILE_NAME]
+```
