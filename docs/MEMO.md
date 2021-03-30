@@ -31,3 +31,5 @@ $array= ["Sunny" => "Cloudy", "Cloudy" => "Rainy", "Rainy"=>"Sunny"];
 **exit と return の違い**
 
 http://blog.pionet.co.jp/experience/archives/487
+
+**PHP が扱える数値の最大値は (9223372036854775807)**
