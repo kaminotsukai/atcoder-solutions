@@ -11,3 +11,5 @@ A4 B4
 **詰まった問題**
 
 https://atcoder.jp/contests/abc195/tasks/abc195_b
+
+https://www.youtube.com/watch?v=k2fzO_U7RnA
