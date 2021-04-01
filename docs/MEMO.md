@@ -33,3 +33,15 @@ $array= ["Sunny" => "Cloudy", "Cloudy" => "Rainy", "Rainy"=>"Sunny"];
 http://blog.pionet.co.jp/experience/archives/487
 
 **PHP が扱える数値の最大値は (9223372036854775807)**
+
+**N 回改行された入力の受け取り方**
+
+```:php
+<?php
+[$N] = $ints();
+
+// デクリメントすることで0 = falseになって特定の回数で止まってくれる
+while($N--){
+    [$X, $Y] = $ints();
+}
+```
