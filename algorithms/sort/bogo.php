@@ -2,7 +2,7 @@
 
 /**
  * 要素をランダムに並び替える
- * 非常に効率の悪いアルゴリズム（運が悪いと揃わない
+ * 非常に効率の悪いアルゴリズム（運が悪いと揃わない）
  * unstable sort
  */
 function bogo_sort(array $numbers): array
