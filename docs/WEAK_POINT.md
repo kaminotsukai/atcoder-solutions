@@ -13,3 +13,8 @@ A4 B4
 https://atcoder.jp/contests/abc195/tasks/abc195_b
 
 https://www.youtube.com/watch?v=k2fzO_U7RnA
+
+## ある範囲の合計値 (1...10)
+
+1...10 の合計値は (1 + 10) _ (10 - 1 + 1) / 2 で出せる
+a...b の合計は(a + b) _ (b - a + 1) / 2
