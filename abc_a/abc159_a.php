@@ -22,3 +22,7 @@ for ($i = 0; $i < $m; $i ++) {
 }
 
 printn($cnt);
+
+
+// 二項係数
+// echo $n * ($n - 1) / 2 + $m * ($m - 1) / 2 . PHP_EOL;
