@@ -26,3 +26,20 @@ for ($i = 1; $i <= $n; $i ++) {
 }
 
 printn($sum);
+
+// $sum = 0;
+// // 1...nまでループ
+// for ($i = 1; $i <= $n; $i ++) {
+
+//     $digitSum = 0;
+
+//     // 各桁の和を算出
+//     preg_match_all("/[0-9]/", (string)$i, $match);
+//     $digitSum += array_sum($match[0]);
+
+//     // 各桁の和の条件チェック
+//     if ($digitSum >= $a && $digitSum <= $b) {
+//         $sum += $i;
+//     }
+// }
+// printn($sum);
