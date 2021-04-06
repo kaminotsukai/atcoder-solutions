@@ -2,6 +2,4 @@
 
 $ints = fn () => array_map('intval', explode(' ', trim(fgets(STDIN))));
 $strs = fn () => array_map('strval', explode(' ', trim(fgets(STDIN))));
-function printn($value) {
-    echo $value . PHP_EOL;
-}
+$printn = fn ($value) => print($value . PHP_EOL);
