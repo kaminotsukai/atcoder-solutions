@@ -7,7 +7,4 @@ $printn = fn ($value) => print($value . PHP_EOL);
 
 [$A, $B] = $ints();
 
-$x = floor((100 * $A) / 8);
-$y = floor($x * 0.1);
-echo $B == $y ? $x : -1;
-echo PHP_EOL;
+
