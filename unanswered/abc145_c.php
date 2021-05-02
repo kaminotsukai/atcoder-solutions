@@ -6,6 +6,7 @@ $printn = fn ($value) => print($value . PHP_EOL);
 
 /**
  * 解説1 - 全探索
+ * 解説2 - 
  */
 
 [$N] = $ints();
