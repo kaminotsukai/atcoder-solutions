@@ -1,0 +1,11 @@
+<?php declare(strict_types = 1);
+
+$ints = fn () => array_map('intval', explode(' ', trim(fgets(STDIN))));
+$strs = fn () => array_map('strval', explode(' ', trim(fgets(STDIN))));
+$printn = fn ($value) => print($value . PHP_EOL);
+
+[$S] = $strs();
+
+$zero = substr_count($S, '0');
+$one = strlen($S) - $zero;
+echo min($zero, $one) * 2 . PHP_EOL;
