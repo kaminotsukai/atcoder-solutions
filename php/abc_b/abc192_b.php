@@ -45,3 +45,20 @@ for ($i = 0; $i < $n; $i ++) {
 printn('Yes');
 
 
+/**
+ * 文字列を一つずつ確認して以下のことを確認する
+ *  奇数番目 - 小文字であること
+ *  偶数番目 - 大文字であること
+ */
+
+[$s] = $strs();
+
+$len = strlen($s);
+$ans = true; // フラグ
+for ($i = 1; $i <= $len; $i++) {
+    if (($i % 2 == 0 && ctype_lower($s[$i - 1])) ||
+        ($i % 2 != 0 && ctype_upper($s[$i - 1]))
+    ) $ans = false;
+}
+echo $ans ? 'Yes' : 'No';
+echo PHP_EOL;

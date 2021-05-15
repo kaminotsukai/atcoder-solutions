@@ -5,7 +5,6 @@ $ans = [];
 do {
     $ans[] = $a;
 } while (next_permutation($a));
-print_r($ans);
 
 function next_permutation(array &$array)
 {
