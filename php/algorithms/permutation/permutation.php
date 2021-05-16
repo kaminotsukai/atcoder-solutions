@@ -19,4 +19,8 @@ function permutation(array $elements)
         }
     }
 }
-foreach (permutation($elements) as $item) echo implode(',', $item) . PHP_EOL;
+$i = 0;
+// foreach (permutation($elements) as $item) echo implode(',', $item) . PHP_EOL;
+foreach (permutation($elements) as $item) {
+    echo ++$i . PHP_EOL;
+}
