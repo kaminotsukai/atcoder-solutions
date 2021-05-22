@@ -7,16 +7,16 @@ $printn = fn ($value) => print($value . PHP_EOL);
 [$n] = $ints();
 
 $map = [];
+$sum = 0;
 for ($i = 0; $i < $n; $i++) {
     [$s] = $strs();
     $sArray = str_split($s);
     sort($sArray);
     $s = implode('', $sArray);
-    $map[$s] = ($map[$s] ?? 0) + 1;
+    $map[$s] = ($map[$s] ?? 0);
+
+    $sum += $map[$s];
+    $map[$s]++;
 }
 
-$cnt = 0;
-foreach ($map as $item) {
-    if ($item > 1) $cnt += ($item * ($item - 1)) / 2;
-}
-echo $cnt . PHP_EOL;
+echo $sum . PHP_EOL;
