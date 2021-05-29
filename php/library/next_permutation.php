@@ -1,11 +1,5 @@
 <?php
 
-$a = [1, 2, 3, 4, 5];
-$ans = [];
-do {
-    $ans[] = $a;
-} while (next_permutation($a));
-
 function next_permutation(array &$array)
 {
     $size = count($array);
