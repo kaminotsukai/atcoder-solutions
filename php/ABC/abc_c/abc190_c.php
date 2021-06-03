@@ -1,22 +1,44 @@
-<?php declare(strict_types = 1);
+<?php
 
 $ints = fn () => array_map('intval', explode(' ', trim(fgets(STDIN))));
 $strs = fn () => array_map('strval', explode(' ', trim(fgets(STDIN))));
-$printn = fn ($value) => print($value . PHP_EOL);
 
 [$N, $M] = $ints();
 
 $conditions = [];
-for ($i = 0; $i < $M; $i ++) $conditions[] = $ints();
+for ($i = 0; $i < $M; $i++) $conditions[] = $ints();
 
 [$K] = $ints();
+$people= [];
+for ($i = 0; $i < $K; $i++) $people[] = $ints();
 
-$a = $b = [];
-for ($i = 0; $i < $K; $i ++) [$a[$i], $b[$i]] = $ints();
+$ans = 0;
+function dfs(array $put, int $depth)
+{
+    global $K, $people, $ans;
 
+    if ($depth === $K) {
+        $ans = max($ans, judge($put));
+        return;
+    }
 
-foreach ($a as $item1) {
-    foreach ($b as $item2) {
-        //
+    for ($i = 0; $i < 2; $i++) {
+        $put[] = $people[$depth][$i];
+        dfs($put, $depth + 1);
+        array_pop($put);
     }
 }
+
+function judge(array $put): int
+{
+    global $conditions;
+
+    $cnt = 0;
+    foreach ($conditions as $condition) {
+        if (in_array($condition[0], $put) && in_array($condition[1], $put)) $cnt++;
+    }
+    return $cnt;
+}
+
+dfs([], 0);
+echo $ans . PHP_EOL;
