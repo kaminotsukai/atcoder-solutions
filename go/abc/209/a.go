@@ -1,15 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 	var a, b int
 	fmt.Scan(&a, &b)
-
-	result := b - a + 1
-	if result < 0 {
-		fmt.Println(0)
-	} else {
-		fmt.Println(result)
-	}
+	fmt.Println(math.Max(float64(b - a + 1), 0))
 }
